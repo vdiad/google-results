@@ -1,1 +1,421 @@
-need html doc stuff
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* My Code */
+body{
+  font-family: arial, sans-serif;
+
+}
+.top-foot{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logo{
+  width: 92px;
+  height: 30px;
+}
+
+input{
+  width: 522px;
+  border: none;
+}
+
+
+.search-border{
+  display: flex;
+  border: 1px solid black;
+  width: 630px;
+  height: 44px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 24px;
+  border: solid 1px #dfe1e5;
+  margin-right: 320px;
+}
+
+.searchicon-a{
+  margin-top: 5px;
+  width: 14px;
+}
+
+.searchicon-b{
+  margin-top: 4px;
+  width: 25px;
+}
+
+button {
+background: transparent;
+border: none;
+}
+
+.headicon{
+  display: flex;
+  height: 20px;
+  width: 120px;
+  justify-content: space-between;
+}
+
+.navicon{
+  width: 20px;
+}
+.navicon1{
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}
+
+.foot-bottom {
+   display: flex;
+   margin: 0 140px;
+   color: #777;
+   font-size: 13px;
+   height: 20px;
+   line-height: 15px;
+   padding-bottom: 10px;
+}
+
+.navleft ul{
+  display: flex;
+  list-style: none;
+  width: 400px;
+  justify-content: space-around;
+
+}
+
+.navright ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 130px;
+  margin-left: 90px;
+}
+
+.selected {
+  font-weight: bold;
+  color: #1A73EB;
+  border-bottom: 3px solid #1A73EB;
+  padding-bottom: 13px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.result-no{
+  font-size: 13px;
+  color: #777;
+  padding-top: 10px;
+  border-top: solid 1px #dfe1e5;
+  height: 18px;
+
+}
+
+.result-no p{
+  margin-left: 165px;
+  margin-top: 10px;
+}
+
+.first3{
+  height: 350px;
+}
+
+.art-results{
+  line-height: 1.33;
+  justify-content: space-around;
+  margin: 15px 0 0 170px;
+  display: flex;
+  flex-flow: column wrap;
+  width: 600px;
+}
+
+
+h2 {
+  font-size: 18px;
+  line-height: 1.33;
+  text-decoration: none;
+  color: #1a0dab;
+  font-weight: 400;
+}
+
+h2:hover{
+  text-decoration: underline;
+
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.domain{
+  color: rgb(0, 102, 33);
+  font-size: 14px;
+}
+
+.disc {
+  font-size: 13px;
+  color: rgb(84, 84, 84);
+  line-height: 20px;
+
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.keywords {
+    list-style:none;
+    display: flex;
+    font-size: 13px;
+    color: #1a0dab;
+    justify-content: space-between;
+    width: 500px;
+}
+
+h3{
+  margin: 30px 0 20px 170px;
+  font-size: 18px;
+  font-weight: normal;
+  color: rgb(34, 34, 34);
+}
+
+.video-arts{
+  display: flex;
+  justify-content: space-around;
+  width: 650px;
+  margin-left: 140px;
+  margin-bottom: 40px;
+
+}
+
+.video-a{
+  border: 1px solid #dfe1e5;
+  border-radius: 10px;
+  height: 300px;
+  width:205px;
+}
+
+.vid-a {
+  width: inherit;
+  border-radius: 10px 10px 0 0;
+  border-bottom: none;
+}
+
+.video-a h2 {
+  font-size: 16px;
+  margin: 13px 15px;
+}
+
+.accountname{
+  font-size: 13px;
+  color: #808080;
+  margin: 0 15px;
+}
+
+.acc1{
+  margin-top: 80px;
+}
+
+.acc2{
+  margin-top: 37px;
+}
+
+.acc3{
+  margin-top: 57px;
+}
+
+span {
+  color: rgb(0, 102, 33);
+  font-size: 14px;
+  margin: 10px 15px;
+}
+
+.a-date {
+  font-size: 12px;
+  color: #777;
+}
+
+
+.table-result{
+  border : 1px solid #dfe1e5;
+  width: 650px;
+  border-radius: 8px;
+  margin-left: 140px;
+  margin-top: 27px;
+}
+
+.thead{
+  font-size: 20px;
+  padding: 15px 16px 10px;
+
+}
+
+.thead h2{
+  color: #808080;
+}
+
+.trow{
+  padding: 5px 16px;
+  border-top: 1px solid #dfe1e5;
+
+}
+
+.trow h4{
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.center-b{
+  height: 500px;
+  }
+
+  .books{
+    border : 1px solid #dfe1e5;
+    width: 650px;
+    border-radius: 8px;
+    margin-left: 140px;
+    margin-top: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 223px;
+  }
+  .booklist{
+    display: flex;
+    font-size: 13px;
+    list-style: none;
+    padding-left: 20px;
+    width: 330px;
+    justify-content: space-between;
+
+  }
+  .relsearch{
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+    padding-left: 20px;
+  }
+  .books img{
+    width: 70px;
+  }
+
+  .book1{
+    display: flex;
+    flex-flow: column wrap;
+    width: 60px;
+    margin-bottom: 25px;
+    align-items: center;
+
+  }
+
+  .books h3{
+    margin: 0;
+    padding: 0 0 0  20px;
+  }
+
+  .m2{
+    width: 550px;
+  }
